@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Money"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        />
+    <EditText
+        android:id="@+id/txt_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose phone types"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+
+        >
+        <RadioButton
+            android:id="@+id/rd_samsung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samsung"
+            android:checked="true"
+            android:buttonTint="@android:color/holo_green_light"
+            android:onClick="checkRadioItem"
+            />
+
+        <RadioButton
+            android:id="@+id/rd_lg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LG"
+            android:buttonTint="@android:color/holo_green_light"
+            android:onClick="checkRadioItem"
+            />
+
+        <RadioButton
+            android:id="@+id/rd_htc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HTC"
+            android:buttonTint="@android:color/holo_green_light"
+            android:onClick="checkRadioItem"
+            />
+
+        <RadioButton
+            android:id="@+id/rd_mi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MI"
+            android:buttonTint="@android:color/holo_green_light"
+            android:onClick="checkRadioItem"
+            />
+        <RadioButton
+            android:id="@+id/rd_huawei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Huawei"
+            android:buttonTint="@android:color/holo_green_light"
+            android:onClick="checkRadioItem"
+            />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        >
+        <Button
+            android:id="@+id/btn_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Show"
+            android:onClick="showInformation"
+            />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Clear"
+            android:onClick="clearData"
+            />
+    </LinearLayout>
+</LinearLayout>
